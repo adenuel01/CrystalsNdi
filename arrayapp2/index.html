@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: rgb(54, 1, 1);
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            height: 600px;
+            border-radius: 20px;
+            border-style: double;
+            border-color: goldenrod;
+            border-width: 3px;
+        }
+        .method {
+            margin-top: 70px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            color: goldenrod;
+            font-weight: bold;
+            
+
+        }
+        .array-display {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: silver;
+        }
+
+        #btn{
+            background-color: gold;
+            padding: 10px;
+            border-color: none;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+
+        }
+
+        #btn:hover{
+            background-color: maroon;
+            color: #fff;
+            font-size: 15px;
+        }
+
+        label{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: goldenrod;font-size: 40px; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Array <span style="color: #fff;">Methods</span> App</h1>
+    </header>
+    <div class="container">
+        
+        <div class="method">
+            <label  style="color: rgb(83, 83, 2);" for="pushInput">Push:</label>
+            <input type="text" id="pushInput">
+            <button id="btn" onclick="pushElement()">Apply Push</button>
+        </div>
+        <div class="method">
+            <label style="color: red;" for="popInput">Pop:</label>
+            <button  id="btn"onclick="popElement()">Apply Pop</button>
+        </div>
+        <div class="method">
+            <label style="color: rgb(5, 174, 81);" for="shiftInput">Shift:</label>
+            <button  id="btn"onclick="shiftElement()">Apply Shift</button>
+        </div>
+        <div class="method">
+            <label  style="color: blue;" for="unshiftInput">Unshift:</label>
+            <input type="text" id="unshiftInput">
+            <button id="btn" onclick="unshiftElement()">Apply Unshift</button>
+        </div>
+        <div class="array-display" id="arrayDisplay">
+            Array: []
+        </div>
+    </div>
+
+    <script src="arrayApp.js"></script>
+</body>
+</html>
